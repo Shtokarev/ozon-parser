@@ -9,20 +9,21 @@ Easy use:
 const InfoLoader = require("./scrape");
 ```
 
+Set number of books you wand to load in every category
 ```
 InfoLoader.setNumberLoadBooks(50);
 ```
-Set number of books you wand to load in every category
 
+Set crape process visible or not - launch a full version of Chromium or headless mode (more speed ~2X in hide mode)
 ```
 InfoLoader.setVisible(false);
 ```
-Set crape process visible or not - launch a full version of Chromium or headless mode (more speed ~2X in hide mode)
 
+Scrap data
 ```
 const contentDB = await InfoLoader.getDBContent();
 ```
 
-scrap data
+Also you can set array of books category what you need in _loadListCategory method
 
 
